@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contato - Cafeteria da Mamãe</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caixa-cabecalho">
+                <h1><img src="img/cabecalho.jpg" alt="Logo da Cafeteria da Mamãe"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="corpo-contato">
+                <form>
+                    <label for="nome-sobrenome">Nome e Sobrenome</label>
+                    <input type="text" id="nome-sobrenome" class="input-padrao" required >
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+
+                    <label for="mensagem">Descrição da reserva</label>
+                    <textarea cols="63" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                    <div>
+                        <p>Como prefere o nosso contato?</p>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                        
+                        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                        
+                    </div>
+
+                    <div>
+                        <p>Qual horário deseja fazer uma reserva?</p>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </div>
+
+                    <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades?</label>
+                    <input type="submit" value="Enviar formulário" class="enviar">
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Terça à Sexta</td>
+                            <td>8hrs-19hrs</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sábado e Domingo</td>
+                            <td>8hrs-20hrs</td>
+                        </tr>
+                    </tbody>
+
+                    
+                </table>
+            </div>
+        </main>
+        <footer>
+            <img class="logo-rodape" src="img/logo-rodape.jpg" alt="Logo de café">
+            <p class="copyright">&copy;Copyright Cafeteria da Mamãe - 2022</p>
+        </footer>
+
+    </body>
+</html>

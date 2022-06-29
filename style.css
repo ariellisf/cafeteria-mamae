@@ -1,0 +1,273 @@
+header {
+  background: #f7d9de;
+  padding: 20px 0px;
+}
+
+.caixa-cabecalho {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+h1 img {
+  height: 240px;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #db7093;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c90f4d;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background: #ff92be;
+  padding: 40px 0;
+}
+
+.logo-rodape {
+  width: 10%;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/*css da página inicial*/
+
+.banner {
+  display: block;
+  margin: 20px auto 30px auto;
+  width: 40%;
+  padding: 10px;
+  box-shadow: 10px 10px 30px 5px #db7093;
+}
+
+.sobre {
+  background: #f7d9de;
+  padding: 2em 0;
+  border: 2px solid #db7093;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #db7093;
+  clear: left;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 1px 1px #c90f4d;
+}
+
+.imagem-sobre {
+  width: 250px;
+  float: left;
+}
+
+.sobre p {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 20px;
+}
+
+.missao {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.beneficios {
+  padding: 3em 0;
+}
+
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+
+.item-lista {
+  line-height: 1.5;
+}
+
+.item-lista::before {
+  content: "♡ ";
+}
+.imagem-beneficios {
+  width: 50%;
+  box-shadow: 10px 10px 30px 5px #db7093;
+}
+
+/* css da página de produtos */
+
+.produtos {
+  margin: 15px auto;
+  padding: 50px 0;
+}
+
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  vertical-align: top;
+  margin: 6%;
+  background: #f7d9de;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 4px dotted #db7093;
+  border-radius: 10px;
+}
+
+.produtos li h2 {
+  text-shadow: 1px 1px #c90f4d;
+}
+
+.produtos li:hover {
+  border-color: #c90f4d;
+}
+
+.produtos li:hover h2 {
+  font-size: 40px;
+}
+
+.expresso,
+.macchiato,
+.cappuccino {
+  width: 250px;
+  height: 150px;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #db7093;
+  margin-bottom: 7px;
+}
+
+.descricao-produto {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.preco-produto {
+  font-size: 22px;
+  font-weight: bold;
+  color: #db7093;
+  margin-top: 10px;
+}
+
+/* css da página de contato */
+
+.corpo-contato {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form p {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #c90f4d;
+}
+
+.input-padrao {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: #f7d9de;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid #db7093;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: #db7093;
+  transform: scale(1.1);
+}
+table {
+  margin: 40px 0 20px 0;
+}
+
+thead {
+  background: #f7d9de;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #db7093;
+  padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .caixa-cabecalho,
+  .principal,
+  .body-home,
+  .conteudo-beneficios {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+  .lista-beneficios,
+  .imagem-beneficios {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .produtos li {
+    display: inherit;
+    width: auto;
+  }
+
+  .corpo-contato {
+    width: auto;
+  }
+}
